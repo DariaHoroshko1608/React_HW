@@ -1,15 +1,16 @@
-import Card from "./components/Card";
-
+import Definitions from "./components/Definitions";
 
 function App() {
-  return (
-      <div className="App">
-        <header className="App-header">
-          <h1>Card</h1>
-          <Card/>
-        </header>
-      </div>
-  );
+    const definitions = [
+        { dt: 'one', dd: 'two', id: 1 },
+        { dt: 'another term', dd: 'another description', id: 2 },
+    ];
+
+    return (
+        <div className="container mt-5">
+            <Definitions data={definitions} />
+        </div>
+    );
 }
 
 export default App;
