@@ -1,10 +1,13 @@
-import Alert from "./components/Alert";
+import ListGroup from "./components/ListGroup";
 
 function App() {
     return (
         <div>
-            <h1>Bootstrap Alert Example</h1>
-            <Alert type="warning" text="What is love?" />
+            <h1>List Group Example</h1>
+            <ListGroup>
+                <p>one</p>
+                <p>two</p>
+            </ListGroup>
         </div>
     );
 }
