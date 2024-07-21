@@ -1,13 +1,9 @@
-import ListGroup from "./components/ListGroup";
+import BtnGroup from "./components/ BtnGroup";
 
 function App() {
     return (
-        <div>
-            <h1>List Group Example</h1>
-            <ListGroup>
-                <p>one</p>
-                <p>two</p>
-            </ListGroup>
+        <div className="App">
+            <BtnGroup />
         </div>
     );
 }
