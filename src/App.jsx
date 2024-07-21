@@ -1,9 +1,15 @@
-import BtnGroup from "./components/ BtnGroup";
+import Slider from "./components/Slider";
+
+const images = [
+    '/images/first.jpeg',
+    '/images/second.jpeg',
+    '/images/third.jpeg'
+];
 
 function App() {
     return (
         <div className="App">
-            <BtnGroup />
+            <Slider images={images} />
         </div>
     );
 }
