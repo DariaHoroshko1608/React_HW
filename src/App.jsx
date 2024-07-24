@@ -1,13 +1,10 @@
-import Collapse from "./components/Collapse";
+import MyForm from "./components/MyForm";
 
-function App() {
-    const text = 'collapse me';
-
-    return (
-        <div className="container mt-3">
-            <Collapse text={text} opened={false} />
-        </div>
-    );
-}
+const App = () => (
+    <div className="container mt-3">
+        <h1>Example of MyForm Component</h1>
+        <MyForm />
+    </div>
+);
 
 export default App;
