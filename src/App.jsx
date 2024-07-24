@@ -1,15 +1,11 @@
-import Slider from "./components/Slider";
-
-const images = [
-    '/images/first.jpeg',
-    '/images/second.jpeg',
-    '/images/third.jpeg'
-];
+import Collapse from "./components/Collapse";
 
 function App() {
+    const text = 'collapse me';
+
     return (
-        <div className="App">
-            <Slider images={images} />
+        <div className="container mt-3">
+            <Collapse text={text} opened={false} />
         </div>
     );
 }
