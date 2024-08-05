@@ -1,15 +1,16 @@
 import React from 'react';
-import EventLogger from './components/EventLogger';
+import TodoBox from './components/TodoBox';
 
 class App extends React.Component {
     render() {
         return (
             <div className="App">
-                <EventLogger />
+                <TodoBox />
             </div>
         );
     }
 }
 
 export default App;
+
 
