@@ -1,10 +1,15 @@
-import MyForm from "./components/MyForm";
+import React from 'react';
+import EventLogger from './components/EventLogger';
 
-const App = () => (
-    <div className="container mt-3">
-        <h1>Example of MyForm Component</h1>
-        <MyForm />
-    </div>
-);
+class App extends React.Component {
+    render() {
+        return (
+            <div className="App">
+                <EventLogger />
+            </div>
+        );
+    }
+}
 
 export default App;
+
