@@ -1,16 +1,21 @@
 import React from 'react';
-import TodoBox from './components/TodoBox';
+import Card from './components/Card';
 
-class App extends React.Component {
-    render() {
-        return (
-            <div className="App">
-                <TodoBox />
-            </div>
-        );
-    }
+function App() {
+    return (
+        <Card>
+            <Card.Body>
+                <Card.Title>Title</Card.Title>
+                <Card.Text>Text</Card.Text>
+            </Card.Body>
+        </Card>
+    );
 }
+console.log(Card);
 
 export default App;
+
+
+
 
 
