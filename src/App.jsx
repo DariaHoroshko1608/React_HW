@@ -1,8 +1,8 @@
 import './App.css';
-import Component from './components/Component';
+import PostCatalog from './components/PostCatalog';
 
 function App() {
-    return <Component />;
+    return <PostCatalog />;
 }
 
 export default App;
