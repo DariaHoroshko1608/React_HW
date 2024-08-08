@@ -1,40 +1,16 @@
 import React from 'react';
+import CardBody from './CardBody';
+import CardTitle from './CardTitle';
+import CardText from './CardText';
 
-const Card = ({ children }) => {
-    return (
-        <div className="card">
-            {children}
-        </div>
-    );
+const CardComponent = ({ children }) => {
+    return <div className='card'>{children}</div>;
 };
-
-const CardBody = ({ children }) => {
-    return (
-        <div className="card-body">
-            {children}
-        </div>
-    );
-};
-
-const CardTitle = ({ children }) => {
-    return (
-        <h4 className="card-title">
-            {children}
-        </h4>
-    );
-};
-
-const CardText = ({ children }) => {
-    return (
-        <p className="card-text">
-            {children}
-        </p>
-    );
-};
-
-Card.Body = CardBody;
-Card.Title = CardTitle;
-Card.Text = CardText;
+const Card = Object.assign(CardComponent, {
+    Body: CardBody,
+    Title: CardTitle,
+    Text: CardText,
+});
 
 export default Card;
 
