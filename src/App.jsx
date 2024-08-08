@@ -1,14 +1,8 @@
-import React from 'react';
-import TodoBox from './components/TodoBox';
+import './App.css';
+import Component from './components/Component';
 
-class App extends React.Component {
-    render() {
-        return (
-            <div className="App">
-                <TodoBox />
-            </div>
-        );
-    }
+function App() {
+    return <Component />;
 }
 
 export default App;
