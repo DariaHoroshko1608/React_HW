@@ -1,12 +1,8 @@
 import './App.css';
-import PostCatalog from './components/PostCatalog';
+import TodoBox from './components/TodoBox';
 
 function App() {
-    return (
-        <main>
-            <PostCatalog />
-        </main>
-    );
+    return <TodoBox />;
 }
 
 export default App;
