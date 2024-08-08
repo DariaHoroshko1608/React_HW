@@ -1,8 +1,8 @@
 import './App.css';
-import PostCatalog from './components/PostCatalog';
+import MarkdownEditor from './components/MarkdownEditor';
 
 function App() {
-    return <PostCatalog />;
+    return <MarkdownEditor onContentChange={console.log} />;
 }
 
 export default App;
