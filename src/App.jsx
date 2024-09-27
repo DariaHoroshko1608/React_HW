@@ -1,14 +1,8 @@
 import './App.css';
-import PostCatalog from './components/PostCatalog';
+import AppRouter from './components/AppRouter';
 
 function App() {
-    return (
-        <main>
-            <PostCatalog />
-        </main>
-    );
+    return <AppRouter />;
 }
 
 export default App;
-
-
