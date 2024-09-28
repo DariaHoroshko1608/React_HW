@@ -1,21 +1,15 @@
-import {useCreatePostMutation} from "./store/postAPI.js";
-import {useEffect} from "react";
+import React from 'react';
+import PostsList from './components/PostsList';
+import AddPost from './components/AddPost';
 
 function App() {
-
-    const [createPost, {isLoading}] = useCreatePostMutation();
-
-    useEffect(() => {
-        setTimeout(() => {
-            createPost();
-        }, 1000)
-    }, [])
     return (
-        <>
-            <div>Hello World {isLoading + ''}</div>
-        </>
-    )
-
+        <div className="App">
+            <h1>Posts</h1>
+            <AddPost />
+            <PostsList />
+        </div>
+    );
 }
 
 export default App;
