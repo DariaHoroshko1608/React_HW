@@ -1,8 +1,21 @@
-import './App.css';
-import AppRouter from './components/AppRouter';
+import {useCreatePostMutation} from "./store/postAPI.js";
+import {useEffect} from "react";
 
 function App() {
-    return <AppRouter />;
+
+    const [createPost, {isLoading}] = useCreatePostMutation();
+
+    useEffect(() => {
+        setTimeout(() => {
+            createPost();
+        }, 1000)
+    }, [])
+    return (
+        <>
+            <div>Hello World {isLoading + ''}</div>
+        </>
+    )
+
 }
 
 export default App;
